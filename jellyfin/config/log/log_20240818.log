@@ -120,3 +120,28 @@
 [2024-08-18 18:25:51.880 +00:00] [INF] [11] Jellyfin.Api.Auth.CustomAuthenticationHandler: "CustomAuthentication" was not authenticated. Failure message: "Invalid token."
 [2024-08-18 18:25:51.881 +00:00] [INF] [11] Jellyfin.Api.Auth.CustomAuthenticationHandler: "CustomAuthentication" was not authenticated. Failure message: "Invalid token."
 [2024-08-18 18:25:51.881 +00:00] [INF] [11] Jellyfin.Api.Auth.CustomAuthenticationHandler: AuthenticationScheme: "CustomAuthentication" was challenged.
+[2024-08-18 18:32:30.558 +00:00] [INF] [32] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2024-08-18 18:32:30.566 +00:00] [INF] [32] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2024-08-18 18:32:30.567 +00:00] [INF] [36] Jellyfin.Networking.PortForwardingHost: Stopping NAT discovery
+[2024-08-18 18:32:30.596 +00:00] [WRN] [32] Jellyfin.Server.Implementations.Users.UserManager: No users, creating one with username "root"
+[2024-08-18 18:32:52.263 +00:00] [INF] [33] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2024-08-18 18:32:52.267 +00:00] [INF] [33] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2024-08-18 18:32:53.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2024-08-18 18:32:53.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2024-08-18 18:32:53.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2024-08-18 18:32:53.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: ["127.0.0.1", "172.17.0.2"]
+[2024-08-18 18:32:53.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["0.0.0.0"]
+[2024-08-18 18:32:53.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2024-08-18 18:32:53.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2024-08-18 18:32:55.043 +00:00] [INF] [37] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2024-08-18 18:32:55.048 +00:00] [INF] [37] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2024-08-18 18:32:55.052 +00:00] [INF] [37] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2024-08-18 18:32:55.286 +00:00] [WRN] [37] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-18 18:32:55.382 +00:00] [WRN] [37] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-18 18:32:55.480 +00:00] [INF] [34] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Starting "/usr/lib/jellyfin-ffmpeg/ffprobe" with args "-analyzeduration 200M -probesize 1G -i file:\"/media/video.mp4.mp4\" -threads 0 -v warning -print_format json -show_streams -show_chapters -show_format"
+[2024-08-18 18:32:56.132 +00:00] [INF] [33] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 1 seconds
+[2024-08-18 18:32:56.167 +00:00] [INF] [29] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media"
+[2024-08-18 18:33:01.931 +00:00] [INF] [29] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "root" has succeeded.
+[2024-08-18 18:33:01.932 +00:00] [INF] [29] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "root": 0/0
+[2024-08-18 18:33:01.934 +00:00] [INF] [29] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user 30118103-6d9b-47c3-9593-eba238d1af47
+[2024-08-18 18:33:02.188 +00:00] [INF] [34] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" request
