@@ -160,3 +160,77 @@
 [2024-08-18 18:00:21.209 +00:00] [INF] [15] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" request
 [2024-08-18 18:04:34.083 +00:00] [INF] [21] Emby.Server.Implementations.IO.LibraryMonitor: "media" ("/media") will be refreshed.
 [2024-08-18 18:04:34.133 +00:00] [WRN] [22] MediaBrowser.Controller.Entities.BaseItem: Library folder "/media" is inaccessible or empty, skipping
+[2024-08-18 18:14:13.389 +00:00] [INF] [39] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" closed
+[2024-08-18 18:14:13.675 +00:00] [ERR] [36] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:18.069 +00:00] [INF] [40] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "root" has succeeded.
+[2024-08-18 18:14:18.070 +00:00] [INF] [40] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "root": 0/0
+[2024-08-18 18:14:18.073 +00:00] [INF] [40] Emby.Server.Implementations.Session.SessionManager: Logging out access token "d8102824b3154e3ca3b5952a92cf0e78"
+[2024-08-18 18:14:18.099 +00:00] [INF] [40] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user a78cd9db-f4d1-4c70-8db8-85fa383fef0e
+[2024-08-18 18:14:18.370 +00:00] [INF] [34] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" request
+[2024-08-18 18:14:18.746 +00:00] [ERR] [38] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/LiveTv/Programs/Recommended".
+[2024-08-18 18:14:24.820 +00:00] [ERR] [39] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:24.894 +00:00] [ERR] [39] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/LiveTv/Recordings".
+[2024-08-18 18:14:25.839 +00:00] [ERR] [40] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:27.846 +00:00] [ERR] [36] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:29.303 +00:00] [INF] [39] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media"
+[2024-08-18 18:14:29.305 +00:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2024-08-18 18:14:29.329 +00:00] [ERR] [39] MediaBrowser.Providers.Folders.FolderMetadataService: Error in "Dynamic Image Provider"
+System.IO.FileNotFoundException: Could not find file '/cache/temp'.
+File name: '/cache/temp'
+   at System.IO.FileSystem.CreateParentsAndDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.FileSystem.CreateDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.Directory.CreateDirectory(String path)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchToFileInternal(BaseItem item, IReadOnlyList`1 itemsWithImages, ImageType imageType, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchAsync(T item, MetadataRefreshOptions options, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RunCustomProvider(ICustomMetadataProvider`1 provider, TItemType item, String logName, MetadataRefreshOptions options, RefreshResult refreshResult, CancellationToken cancellationToken)
+[2024-08-18 18:14:29.515 +00:00] [WRN] [39] MediaBrowser.Controller.Entities.BaseItem: Library folder "/media" is inaccessible or empty, skipping
+[2024-08-18 18:14:29.516 +00:00] [WRN] [39] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-18 18:14:29.544 +00:00] [ERR] [36] MediaBrowser.Providers.Folders.FolderMetadataService: Error in "Dynamic Image Provider"
+System.IO.FileNotFoundException: Could not find file '/cache/temp'.
+File name: '/cache/temp'
+   at System.IO.FileSystem.CreateParentsAndDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.FileSystem.CreateDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.Directory.CreateDirectory(String path)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchToFileInternal(BaseItem item, IReadOnlyList`1 itemsWithImages, ImageType imageType, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchAsync(T item, MetadataRefreshOptions options, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RunCustomProvider(ICustomMetadataProvider`1 provider, TItemType item, String logName, MetadataRefreshOptions options, RefreshResult refreshResult, CancellationToken cancellationToken)
+[2024-08-18 18:14:29.566 +00:00] [ERR] [39] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error in "Dynamic Image Provider"
+System.IO.FileNotFoundException: Could not find file '/cache/temp'.
+File name: '/cache/temp'
+   at System.IO.FileSystem.CreateParentsAndDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.FileSystem.CreateDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.Directory.CreateDirectory(String path)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchToFileInternal(BaseItem item, IReadOnlyList`1 itemsWithImages, ImageType imageType, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchAsync(T item, MetadataRefreshOptions options, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RunCustomProvider(ICustomMetadataProvider`1 provider, TItemType item, String logName, MetadataRefreshOptions options, RefreshResult refreshResult, CancellationToken cancellationToken)
+[2024-08-18 18:14:29.573 +00:00] [ERR] [36] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error in "Dynamic Image Provider"
+System.IO.FileNotFoundException: Could not find file '/cache/temp'.
+File name: '/cache/temp'
+   at System.IO.FileSystem.CreateParentsAndDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.FileSystem.CreateDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.Directory.CreateDirectory(String path)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchToFileInternal(BaseItem item, IReadOnlyList`1 itemsWithImages, ImageType imageType, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchAsync(T item, MetadataRefreshOptions options, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RunCustomProvider(ICustomMetadataProvider`1 provider, TItemType item, String logName, MetadataRefreshOptions options, RefreshResult refreshResult, CancellationToken cancellationToken)
+[2024-08-18 18:14:29.604 +00:00] [WRN] [36] MediaBrowser.Controller.Entities.BaseItem: Library folder "/media" is inaccessible or empty, skipping
+[2024-08-18 18:14:29.604 +00:00] [WRN] [36] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-18 18:14:29.621 +00:00] [INF] [39] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2024-08-18 18:14:29.622 +00:00] [INF] [41] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media"
+[2024-08-18 18:14:31.853 +00:00] [ERR] [41] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:32.531 +00:00] [ERR] [41] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/LiveTv/Programs/Recommended".
+[2024-08-18 18:14:35.004 +00:00] [ERR] [36] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/LiveTv/Programs/Recommended".
+[2024-08-18 18:14:46.495 +00:00] [ERR] [39] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:46.507 +00:00] [ERR] [39] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/LiveTv/Recordings".
+[2024-08-18 18:14:47.513 +00:00] [ERR] [41] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:49.519 +00:00] [ERR] [41] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/System/Info".
+[2024-08-18 18:14:53.562 +00:00] [ERR] [41] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Could not find file '/cache/transcodes'". URL "GET" "/LiveTv/Programs/Recommended".
+[2024-08-18 18:15:02.179 +00:00] [ERR] [34] MediaBrowser.Providers.Folders.CollectionFolderMetadataService: Error in "Dynamic Image Provider"
+System.IO.FileNotFoundException: Could not find file '/cache/temp'.
+File name: '/cache/temp'
+   at System.IO.FileSystem.CreateParentsAndDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.FileSystem.CreateDirectory(String fullPath, UnixFileMode unixCreateMode)
+   at System.IO.Directory.CreateDirectory(String path)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchToFileInternal(BaseItem item, IReadOnlyList`1 itemsWithImages, ImageType imageType, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Images.BaseDynamicImageProvider`1.FetchAsync(T item, MetadataRefreshOptions options, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.MetadataService`2.RunCustomProvider(ICustomMetadataProvider`1 provider, TItemType item, String logName, MetadataRefreshOptions options, RefreshResult refreshResult, CancellationToken cancellationToken)
+[2024-08-18 18:15:02.181 +00:00] [WRN] [34] MediaBrowser.Controller.Entities.BaseItem: Library folder "/media" is inaccessible or empty, skipping
