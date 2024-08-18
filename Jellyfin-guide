@@ -1,6 +1,4 @@
 # The process of installing and activating jellyfindocker pull jellyfin/jellyfin
-
-
 ```
 docker pull jellyfin/jellyfin
 ```
