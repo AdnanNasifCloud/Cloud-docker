@@ -1,13 +1,17 @@
 # The process of installing and activating jellyfindocker pull jellyfin/jellyfin
 
 
-```docker pull jellyfin/jellyfin
+```
+docker pull jellyfin/jellyfin
+
 ```
 
 ```
 mkdir /home/adnan/mygithub/Cloud-docker/jellyfin/config
 mkdir /home/adnan/mygithub/Cloud-docker/jellyfin/cache
+
 ```
+
 
 ```
 docker run -d \
@@ -19,4 +23,5 @@ docker run -d \
  --restart=unless-stopped \
  jellyfin/jellyfin
 git config --global
+
 ```
