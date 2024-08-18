@@ -2,7 +2,6 @@
 
 
 ```
-
 docker pull jellyfin/jellyfin
 
 
@@ -20,5 +19,4 @@ mkdir /home/adnan/mygithub/Cloud-docker/jellyfin/cache
  --restart=unless-stopped \
  jellyfin/jellyfin
 git config --global
-
 ```
