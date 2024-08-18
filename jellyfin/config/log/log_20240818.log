@@ -71,3 +71,11 @@
 [2024-08-18 17:44:19.142 +00:00] [INF] [4] Main: Startup complete 0:00:04.2747813
 [2024-08-18 17:44:21.313 +00:00] [INF] [6] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean up collections and playlists" Completed after 0 minute(s) and 0 seconds
 [2024-08-18 17:44:22.766 +00:00] [INF] [6] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2024-08-18 17:46:47.730 +00:00] [INF] [19] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "root" has been denied (IP: "192.168.1.9").
+[2024-08-18 17:46:47.735 +00:00] [ERR] [19] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Invalid username or password entered". URL "POST" "/Users/authenticatebyname".
+[2024-08-18 17:46:48.771 +00:00] [INF] [18] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "root" has been denied (IP: "192.168.1.9").
+[2024-08-18 17:46:48.772 +00:00] [ERR] [18] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Invalid username or password entered". URL "POST" "/Users/authenticatebyname".
+[2024-08-18 17:46:56.447 +00:00] [INF] [18] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2024-08-18 17:46:56.453 +00:00] [INF] [18] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2024-08-18 17:46:56.454 +00:00] [INF] [20] Jellyfin.Networking.PortForwardingHost: Stopping NAT discovery
+[2024-08-18 17:46:56.479 +00:00] [WRN] [20] Jellyfin.Server.Implementations.Users.UserManager: No users, creating one with username "root"
