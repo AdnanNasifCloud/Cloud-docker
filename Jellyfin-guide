@@ -1,7 +1,6 @@
 # The process of installing and activating jellyfindocker pull jellyfin/jellyfin
-```
-docker pull jellyfin/jellyfin
-```
+
+```docker pull jellyfin/jellyfin```
 
 
 mkdir /home/adnan/mygithub/Cloud-docker/jellyfin/config
