@@ -94,3 +94,6 @@
 [2024-08-19 04:33:37.036 +00:00] [INF] [20] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" request
 [2024-08-19 04:33:44.869 +00:00] [INF] [26] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" closed
 [2024-08-19 04:35:26.678 +00:00] [INF] [20] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2024-08-19 04:38:14.677 +00:00] [INF] [88] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2024-08-19 04:41:02.677 +00:00] [INF] [59] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2024-08-19 04:43:50.677 +00:00] [INF] [44] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
